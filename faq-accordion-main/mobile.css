@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: "Work Sans", sans-serif;
+
 }
 
 #background {
@@ -11,5 +13,66 @@ body {
     background-color: white;
     max-width: 400px;
     min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 0 50px;
 }
 
+#FAQs {
+    margin: 20px 30px;
+    display: flex;
+}
+
+#FAQs h1 {
+    margin: 0;
+}
+
+[id^="questions"] {
+    margin: 0 30px;
+}
+
+.question {
+    font-size: 16px;
+    font-weight: 600;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+.question h4 {
+    margin-right: 20px;
+    flex: auto;
+}
+
+.answer {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    display: none;
+    color: hsl(292, 16%, 49%);
+    line-height: 1.5;
+}
+
+[id^="questions"] .question:hover {
+    color: hsl(292, 16%, 49%);
+}
+
+[id^="questions"]:last-child {
+    margin-bottom: 20px;
+}
+
+hr {
+    margin: 10px 30px;
+}
+
+.iconDropdown {
+    float: right;
+}
+
+.icon-star {
+    width: 30px;
+    float: left;
+    margin-right: 20px;
+}
