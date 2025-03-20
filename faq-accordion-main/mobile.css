@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#background {
+    background-color: purple;
+}
+
+#content {
+    background-color: white;
+    max-width: 400px;
+    min-width: 300px;
+}
+
